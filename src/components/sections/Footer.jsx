@@ -46,7 +46,7 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="border-t border-border pt-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <span className="text-[13px] text-muted">
-            © 2025 MakeMyCall BPO Solutions. All rights reserved.
+            © 2026 MakeMyCall BPO Solutions. All rights reserved.
           </span>
           <span className="text-[13px] text-muted">
             Avadi, Tamil Nadu, India
