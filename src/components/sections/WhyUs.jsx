@@ -26,7 +26,7 @@ export default function WhyUs() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgUrl})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-slate-50/88 to-white/92" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-slate-50/70 to-white/62" />
 
       <div className="relative max-w-[1100px] mx-auto px-6 md:px-12 py-16 md:py-20">
         <SectionHeader

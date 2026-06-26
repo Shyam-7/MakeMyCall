@@ -16,7 +16,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="border-b border-white/10 px-4 sm:px-6 lg:px-12 h-16 flex items-center justify-between sticky top-0 z-50 backdrop-blur-md bg-navy/80">
+    <nav className="border-b border-white/10 px-4 sm:px-6 lg:px-12 h-16 flex items-center justify-between sticky top-0 z-50 backdrop-blur-md bg-gradient-to-r from-blue-950/80 via-gray-900/60 to-blue-950/80">
       {/* Logo — shrinks on smaller screens to avoid overlap */}
       <div className="shrink-0">
         <Logo />

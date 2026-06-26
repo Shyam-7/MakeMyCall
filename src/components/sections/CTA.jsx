@@ -3,7 +3,7 @@ import { MailOutlined, PhoneOutlined } from '@ant-design/icons'
 
 export default function CTA() {
   return (
-    <section id="contact" className="px-6 md:px-12 mb-16">
+    <section id="contact" className="px-6 md:px-12 mb-8 mt-8">
       <div className="relative max-w-[1100px] mx-auto overflow-hidden rounded-2xl md:rounded-[20px]">
         {/* Gradient background with subtle pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-[#162252] to-blue-dark" />
