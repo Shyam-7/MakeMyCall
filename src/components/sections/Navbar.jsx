@@ -63,8 +63,11 @@ export default function Navbar() {
         placement="right"
         onClose={() => setMobileOpen(false)}
         open={mobileOpen}
-        closeIcon={<CloseOutlined />}
+        closeIcon={<CloseOutlined className="!text-white mr-5" />}
         width={280}
+        classNames={{
+          header: 'bg-navy !h-[65px] flex items-center justify-center gap-4',
+        }}
       >
         <div className="flex flex-col gap-4">
           {NAV_LINKS.map((link) => (
