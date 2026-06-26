@@ -1,5 +1,5 @@
 export default function Logo({ size = 'default' }) {
-  const imgSize = size === 'small' ? 'w-8 h-8' : 'w-10 h-10'
+  const imgSize = size === 'small' ? 'w-10 h-10' : 'w-12 h-12'
   const nameSize = size === 'small' ? 'text-base' : 'text-lg'
 
   return (
@@ -10,11 +10,11 @@ export default function Logo({ size = 'default' }) {
         className={`${imgSize} object-contain`}
       />
       <div>
-        <div className={`${nameSize} font-bold text-navy`}>
-          Make<span className="text-blue">My</span>Call
+        <div className={`${nameSize} font-bold text-white`}>
+          Make<span className="text-blue-300">My</span>Call
         </div>
         {size !== 'small' && (
-          <span className="block text-[10px] font-semibold tracking-[2px] uppercase text-muted -mt-0.5">
+          <span className="block text-[10px] font-semibold tracking-[2px] uppercase text-white/50 -mt-0.5">
             BPO Solutions
           </span>
         )}

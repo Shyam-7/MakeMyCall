@@ -16,11 +16,14 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white border-b border-border px-6 md:px-12 h-16 flex items-center justify-between sticky top-0 z-50 backdrop-blur-sm bg-white/95">
-      <Logo />
+    <nav className="border-b border-white/10 px-4 sm:px-6 lg:px-12 h-16 flex items-center justify-between sticky top-0 z-50 backdrop-blur-md bg-navy/80">
+      {/* Logo — shrinks on smaller screens to avoid overlap */}
+      <div className="shrink-0">
+        <Logo />
+      </div>
 
-      {/* Desktop nav links */}
-      <ul className="hidden md:flex gap-8 list-none">
+      {/* Desktop nav links — hidden below lg to prevent cramped links */}
+      <ul className="hidden lg:flex gap-5 xl:gap-8 list-none">
         {NAV_LINKS.map((link) => (
           <li key={link.label}>
             <a
@@ -29,7 +32,7 @@ export default function Navbar() {
                 e.preventDefault()
                 handleNavClick(link.href)
               }}
-              className="text-sm font-medium text-muted no-underline transition-colors duration-150 hover:text-navy"
+              className="text-sm font-semibold text-white/80 no-underline transition-colors duration-150 hover:text-white whitespace-nowrap"
             >
               {link.label}
             </a>
@@ -37,20 +40,20 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Desktop CTA */}
+      {/* Desktop CTA — hidden below lg */}
       <Button
         type="primary"
-        className="hidden md:inline-flex !rounded-lg !font-semibold !text-sm !h-auto !px-5 !py-2"
+        className="hidden lg:inline-flex !rounded-lg !font-semibold !text-sm !h-auto !px-5 !py-2 shrink-0"
         onClick={() => handleNavClick('#contact')}
       >
         Book a Call
       </Button>
 
-      {/* Mobile menu button */}
+      {/* Mobile menu button — visible below lg */}
       <Button
         type="text"
-        icon={<MenuOutlined />}
-        className="md:hidden"
+        icon={<MenuOutlined className="!text-white" />}
+        className="lg:hidden !text-white"
         onClick={() => setMobileOpen(true)}
       />
 
@@ -72,7 +75,7 @@ export default function Navbar() {
                 e.preventDefault()
                 handleNavClick(link.href)
               }}
-              className="text-base font-medium text-muted no-underline py-2 border-b border-border hover:text-navy transition-colors"
+              className="text-base font-medium text-slate-700 no-underline py-2 border-b border-border hover:text-navy transition-colors"
             >
               {link.label}
             </a>

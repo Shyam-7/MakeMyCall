@@ -11,3 +11,17 @@
   --color-surface: #F8FAFC;
   --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure Ant Design components respect Tailwind's text color utilities on dark backgrounds */
+.ant-card.ant-card-hoverable {
+  transition: all 0.2s ease;
+}
+
+/* Smooth image loading */
+img {
+  transition: opacity 0.3s ease;
+}

@@ -11,6 +11,7 @@ import {
   FileTextOutlined,
   TrophyOutlined,
   MessageOutlined,
+  MailOutlined,
 } from '@ant-design/icons'
 
 export const NAV_LINKS = [
@@ -45,6 +46,12 @@ export const HERO_CARDS = [
     title: 'Reporting & QA',
     description: 'Weekly reports and quality audits to keep standards high.',
   },
+  {
+    icon: <MailOutlined />,
+    bgClass: 'bg-rose-50',
+    title: 'Chat & Email Services',
+    description: 'Email, live chat, and social media support — quick, professional responses that keep customers engaged.',
+  }
 ]
 
 export const INDUSTRIES = [
