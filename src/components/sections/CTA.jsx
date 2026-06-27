@@ -27,7 +27,7 @@ export default function CTA() {
               size="large"
               icon={<MailOutlined />}
               className="!bg-white !text-navy !border-none !rounded-lg !font-semibold !text-[15px] !h-auto !px-6 !py-3 hover:!bg-blue-50"
-              onClick={() => window.location.href = 'mailto:hello@makemycall.in'}
+              onClick={() => window.location.href = 'mailto:makemycalloffical@gmail.com'}
             >
               Email Us
             </Button>
@@ -35,6 +35,7 @@ export default function CTA() {
               size="large"
               icon={<PhoneOutlined />}
               className="!bg-transparent !text-white !border-white/30 !rounded-lg !font-semibold !text-[15px] !h-auto !px-5.5 !py-[11px] hover:!border-white/60 hover:!bg-white/10"
+              onClick={() => window.location.href = 'https://wa.me/7395940250'}
             >
               Schedule a Call
             </Button>

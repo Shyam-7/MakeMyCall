@@ -166,8 +166,8 @@ export const FOOTER_LINKS = {
     { label: 'Contact', href: '#contact' },
   ],
   contact: [
-    { label: 'hello@makemycall.in', href: 'mailto:hello@makemycall.in' },
+    { label: 'makemycalloffical@gmail.com', href: 'mailto:makemycalloffical@gmail.com' },
     { label: 'LinkedIn', href: '#' },
-    { label: 'WhatsApp', href: '#' },
+    { label: 'WhatsApp', href: 'https://wa.me/7395940250' },
   ],
 }
